@@ -24,7 +24,7 @@ function ImageDetails() {
                 <img src={img.image} alt="image" />
             </div>
             <div id="content">
-                <h1>{img.title}</h1>
+                <h1 id="h1OfImageDetails">{img.title}</h1>
                 <span>{img.description}</span>
             </div>
         </div>

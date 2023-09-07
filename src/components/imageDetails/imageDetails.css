@@ -25,6 +25,9 @@
 span{
     color: #f7e9e9;
 }
+#h1OfImageDetails{
+    text-align: left;
+}
 @media screen and (max-width: 900px){
     html{
         font-size: 90%;
