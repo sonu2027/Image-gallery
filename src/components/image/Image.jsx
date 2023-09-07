@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
 import "./Image.css"
+import { Link } from "react-router-dom";
 function Image() {
     const [photos, setPhotos] = useState([])
     const [offSet, setOffSet] = useState(0)
@@ -31,7 +32,7 @@ function Image() {
     return (
         <div>
             <div className="image-wrapper">
-                {photos.map((p) => <img className="image" key={p.id} src={p.url} alt="Image" />)}
+                {photos.map((p) => <Link to={`${p.id}`} key={p.id}><img className="image" key={p.id} src={p.url} alt="Image" /></Link>)}
             </div>
             <div id="button">
                 <button disabled={offSet == 0} onClick={setTravelOffSet}>Prev</button>
